@@ -1,17 +1,33 @@
 @font-face {
-  font-family: "Roboto", sans-serif;
-  src: url(../../fonts/RobotoCondensed-Bold.ttf);
+  font-family: "Rubik", sans-serif;
+  src: url(../../fonts/Rubik-Black.ttf);
 }
 @font-face {
-  font-family: "Roboto", sans-serif;
-  src: url(../../fonts/RobotoCondensed-Light.ttf);
+  font-family: "Rubik", sans-serif;
+  src: url(../../fonts/Rubik-Bold.ttf);
 }
 @font-face {
-  font-family: "Roboto", sans-serif;
-  src: url(../../fonts/RobotoCondensed-Regular.ttf);
+  font-family: "Rubik", sans-serif;
+  src: url(../../fonts/Rubik-ExtraBold.ttf);
+}
+@font-face {
+  font-family: "Rubik", sans-serif;
+  src: url(../../fonts/Rubik-Light.ttf);
+}
+@font-face {
+  font-family: "Rubik", sans-serif;
+  src: url(../../fonts/Rubik-Medium.ttf);
+}
+@font-face {
+  font-family: "Rubik", sans-serif;
+  src: url(../../fonts/Rubik-Regular.ttf);
+}
+@font-face {
+  font-family: "Rubik", sans-serif;
+  src: url(../../fonts/Rubik-SemiBold.ttf);
 }
 html, body * {
-  font-family: "Roboto", sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 * {
@@ -230,6 +246,162 @@ header {
   box-shadow: 5px 0 10px 3px black;
 }
 
+#backtop {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 50%;
+  bottom: -100px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  z-index: -1;
+  background-color: #FFA63A;
+  -webkit-animation: bgcolor infinite 2s;
+          animation: bgcolor infinite 2s;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+@-webkit-keyframes bgcolor {
+  0% {
+    background: #e74c3c;
+  }
+  20% {
+    background: #2980b9;
+  }
+  40% {
+    background: #f1c40f;
+  }
+  60% {
+    background: #8e44ad;
+  }
+  80% {
+    background: #34495e;
+  }
+  100% {
+    background: #e74c3c;
+  }
+}
+
+@keyframes bgcolor {
+  0% {
+    background: #e74c3c;
+  }
+  20% {
+    background: #2980b9;
+  }
+  40% {
+    background: #f1c40f;
+  }
+  60% {
+    background: #8e44ad;
+  }
+  80% {
+    background: #34495e;
+  }
+  100% {
+    background: #e74c3c;
+  }
+}
+#backtop.backtop-show {
+  bottom: 70px;
+  z-index: 10;
+}
+
+#loader {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  opacity: 0.8;
+  transition: 2s;
+  z-index: 10000;
+}
+
+#loader.loading-none {
+  z-index: -10000;
+  opacity: 0;
+}
+
+.loader {
+  width: 150px;
+  height: 150px;
+  border-left: 5px solid #38ff8e;
+  border-radius: 50%;
+  -webkit-animation: right5231 0.9s linear infinite;
+          animation: right5231 0.9s linear infinite;
+}
+
+.loader::before,
+.loader::after {
+  content: "";
+  width: 120px;
+  height: 120px;
+  display: block;
+  position: absolute;
+  top: calc(50% - 60px);
+  left: calc(50% - 60px);
+  border-right: 5px solid #ffbe0b;
+  border-radius: 50%;
+  -webkit-animation: left036 0.9s linear infinite;
+          animation: left036 0.9s linear infinite;
+}
+
+.loader::after {
+  width: 90px;
+  height: 90px;
+  top: calc(50% - 45px);
+  left: calc(50% - 45px);
+  border: 0;
+  border-top: 5px solid #ff086e;
+  -webkit-animation: none;
+          animation: none;
+}
+
+@-webkit-keyframes right5231 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes right5231 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes left036 {
+  from {
+    transform: rotate(720deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+@keyframes left036 {
+  from {
+    transform: rotate(720deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
 #navbar {
   background-color: #fff;
   padding-top: 15px;
@@ -1138,7 +1310,7 @@ header {
   align-items: center;
   gap: 8px;
 }
-#footer .footer__phone h3 {
+#footer .footer__phone a {
   color: var(--main-on-surface, #414141);
   font-size: 16px;
   font-style: normal;

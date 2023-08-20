@@ -2,18 +2,36 @@
 
 
 @font-face {
-   font-family: 'Roboto', sans-serif;
-   src: url(../../fonts/RobotoCondensed-Bold.ttf);
+   font-family: 'Rubik', sans-serif;
+   src: url(../../fonts/Rubik-Black.ttf);
 }
 @font-face {
-   font-family: 'Roboto', sans-serif;
-   src: url(../../fonts/RobotoCondensed-Light.ttf);
+   font-family: 'Rubik', sans-serif;
+   src: url(../../fonts/Rubik-Bold.ttf);
 }
 @font-face {
-   font-family: 'Roboto', sans-serif;
-   src: url(../../fonts/RobotoCondensed-Regular.ttf);
+   font-family: 'Rubik', sans-serif;
+   src: url(../../fonts/Rubik-ExtraBold.ttf);
+}
+
+@font-face {
+   font-family: 'Rubik', sans-serif;
+   src: url(../../fonts/Rubik-Light.ttf);
+}
+
+@font-face {
+   font-family: 'Rubik', sans-serif;
+   src: url(../../fonts/Rubik-Medium.ttf);
+}
+
+@font-face {
+   font-family: 'Rubik', sans-serif;
+   src: url(../../fonts/Rubik-Regular.ttf);
+}
+@font-face {
+   font-family: 'Rubik', sans-serif;
+   src: url(../../fonts/Rubik-SemiBold.ttf);
 }
 
 html,body *{
-   font-family: 'Roboto', sans-serif;
-}
+   font-family: 'Rubik', sans-serif; }

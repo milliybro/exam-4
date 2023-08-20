@@ -3,6 +3,8 @@
 @use "../layout/footer";
 @use "../utils/mixins" as mxn;
 @use "../utils/variables" as var;
+@use "../themes/backtop";
+@use "../themes/loading";
 
 #navbar {
   background-color: #fff;
@@ -877,7 +879,7 @@
       flex-direction: row;
       align-items: center;
       gap: 8px;
-      h3 {
+      a {
         color: var(--main-on-surface, #414141);
         font-size: 16px;
         font-style: normal;
