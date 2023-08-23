@@ -22,6 +22,7 @@ function toggleBacktop() {
     backtop.classList.remove('backtop-show')
   }
 }
+// alert("Xush kelibsiz! \nBu sayt MilliyBro tamonidan tayyorlangan \nOK tugmasini bosing");
 
 
 function openNavbar() {
@@ -125,5 +126,3 @@ function shrink() {
 
 
 
-
-alert("Xush kelibsiz! \nBu sayt MilliyBro tamonidan tayyorlangan \nOK tugmasini bosing");
