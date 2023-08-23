@@ -1,0 +1,33 @@
+@use "../global";
+@use "../layout/header";
+@use "../layout/footer";
+@use "../utils/mixins" as mxn;
+@use "../utils/variables" as var;
+@use "../themes/backtop";
+@use "../themes/loading";
+main {
+  background: var(--main-bg-page, #fbf8ec);
+}
+#hero {
+  .hero {
+    &__head {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding-top: 27px;
+
+      a {
+        color: var(--main-on-surface, #414141);
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 18px */
+      }
+      .href {
+        color: var(--grayscale-hard, #8f8f8f);
+      }
+    }
+
+  }
+}
+

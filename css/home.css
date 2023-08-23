@@ -576,6 +576,14 @@ header {
   }
 }
 
+.aktiv {
+  color: var(--main-primary, #f63) !important;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 18px */
+}
+
 #backtop {
   position: fixed;
   display: flex;
