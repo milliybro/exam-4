@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Молоко, сыр, яйцо</title>
+   <link rel="stylesheet" href="css/category.min.css" />
+</head>
+
+<body>
+   <a id="backtop" href="#">
+      <img src="image/home/arr.svg" alt="arrow">
+   </a>
+   <div id="loader">
+      <div class="loader"></div>
+   </div>
+   <header>
+      <nav id="navbar">
+         <div class="container navbar__container">
+            <div class="navbar__logo">
+               <a href="index.html"><img class="logo__face" src="image/home/logo-face.png" alt="">
+                  <img class="logo__title" src="image/home/logo.png" alt=""></a>
+            </div>
+            <div class="navbar__catalog">
+               <button><img src="image/home/menu.svg" alt=""></button>
+               <a class="navbar__link" href="category.html">Каталог</a>
+            </div>
+            <div class="navbar__input">
+               <input type="text" placeholder="Найти товар">
+               <img src="image/home/lupa.png" alt="">
+            </div>
+            <div class="navbar__menu">
+               <div class="navbar__menu__heart">
+
+                  <a href="favorite.html">
+                     <img src="image/home/hearth.png" alt="">
+                     <h3>Избранное</h3>
+                  </a>
+               </div>
+               <div class="navbar__menu__product">
+
+                  <a href="products.html">
+                     <img src="image/home/product.png" alt="fdbc">
+                     <h3>продукты</h3>
+                  </a>
+               </div>
+               <div class="navbar__menu__cart">
+                  <a href="cart.html">
+                     <img src="image/home/cart.png" alt="">
+                     <h3>Корзина<h3>
+                  </a>
+               </div>
+            </div>
+            <div class="navbar__account">
+               <a href="">
+                  <img src="image/home/accaunt.png" alt="">
+                  <h2>Алексей</h2>
+                  <img class="nav__acc" src="image/home/arrow.png" alt="">
+               </a>
+            </div>
+         </div>
+      </nav>
+   </header>
+
+   <section id="hero" class="head__fixed">
+      <div class="container hero">
+         <div class="hero__head">
+            <a href="index.html">Главная</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+               <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M8.64645 5.64645C8.84171 5.45118 9.15829 5.45118 9.35355 5.64645L15.3536 11.6464C15.5488 11.8417 15.5488 12.1583 15.3536 12.3536L9.35355 18.3536C9.15829 18.5488 8.84171 18.5488 8.64645 18.3536C8.45118 18.1583 8.45118 17.8417 8.64645 17.6464L14.2929 12L8.64645 6.35355C8.45118 6.15829 8.45118 5.84171 8.64645 5.64645Z"
+                  fill="#414141" />
+            </svg>
+            <a href="vacancy.html" class="href">Вакансии</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+               <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M8.64645 5.64645C8.84171 5.45118 9.15829 5.45118 9.35355 5.64645L15.3536 11.6464C15.5488 11.8417 15.5488 12.1583 15.3536 12.3536L9.35355 18.3536C9.15829 18.5488 8.84171 18.5488 8.64645 18.3536C8.45118 18.1583 8.45118 17.8417 8.64645 17.6464L14.2929 12L8.64645 6.35355C8.45118 6.15829 8.45118 5.84171 8.64645 5.64645Z"
+                  fill="#414141" />
+            </svg>
+            <a href="vacancy.html" class="products">Молоко, сыр, яйцо</a>
+         </div>
+         <h1>Молоко, сыр, яйцо</h1>
+
+
+      </div>
+   </section>
+   <main>
+      <div class="container main">
+         <aside>
+            <button class="filter">Фильтр</button>
+            <div class="price">
+               <h4>Цена</h4>
+               <button>Очистить</button>
+            </div>
+            <div class="input">
+               <input type="text" value="1">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                     d="M4.5 12C4.5 11.7239 4.72386 11.5 5 11.5H19C19.2761 11.5 19.5 11.7239 19.5 12C19.5 12.2761 19.2761 12.5 19 12.5H5C4.72386 12.5 4.5 12.2761 4.5 12Z"
+                     fill="#414141" />
+               </svg>
+               <input type="text" value="100">
+            </div>
+            <img src="image/category/line.png" alt="">
+         </aside>
+         <section id="news">
+            <div class="container news">
+               
+               <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+               <div class="timeline" id="timeline">
+                  <t style="display:none">
+                     <div class="news__item__card">
+                        <a href="product.html"><img class="news1" src="image/category/category1.png" alt=""></a>
+                        <img class="news__like" src="image/home/like.svg" alt="">
+
+                        <div class="card__main">
+                           <div class="card__head">
+                              <div class="card__head__left">
+                                 <div class="card__head__left__head">
+                                    <h4>139,99</h4>
+                                    <h4> ₽</h4>
+                                 </div>
+
+                              </div>
+                           </div>
+                           <h3>
+                              Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»
+                              В корзину
+                              <br></h3>
+                           <img src="image/home/star3.svg" alt="">
+                           <a href="cart.html"><button>В корзину</button></a>
+                        </div>
+                     </div>
+                  </t>
+                  <t style="display:none">
+                     <div class="action__item__card">
+                        <a href="product.html"><img class="action1" src="image/home/action2.png" alt=""></a>
+                        <img class="action__like demo" id="demo" onclick="removeButton(event)" src="image/home/like.svg"
+                           alt="">
+                        <h2>-50%</h2>
+                        <div class="card__main">
+                           <div class="card__head">
+                              <div class="card__haed__left">
+                                 <div class="card__head__left__head">
+                                    <h4>69,99 </h4>
+                                    <h4> ₽</h4>
+                                 </div>
+                                 <h5>С картой</h5>
+                              </div>
+                              <div class="card__haed__right">
+                                 <div class="card__head__right__head">
+                                    <h6>140,50 </h6>
+                                    <h6> ₽</h6>
+                                 </div>
+                                 <h5>Обычная</h5>
+                              </div>
+                           </div>
+                           <h3>Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное ...</h3>
+                           <img src="image/category/rating25.png" alt="">
+                           <a href="cart.html"><button>В корзину</button></a>
+                        </div>
+                     </div>
+                  </t>
+                  <t style="display:none">
+                     <div class="action__item__card">
+                        <a href="product.html"><img class="action1" src="image/category/category3.png" alt=""></a>
+                        <img class="action__like demo" id="demo" onclick="removeButton(event)" src="image/home/like.svg"
+                           alt="">
+                        <h2>-50%</h2>
+                        <div class="card__main">
+                           <div class="card__head">
+                              <div class="card__haed__left">
+                                 <div class="card__head__left__head">
+                                    <h4>77,99 </h4>
+                                    <h4> ₽</h4>
+                                 </div>
+                                 <h5>С картой</h5>
+                              </div>
+                              <div class="card__haed__right">
+                                 <div class="card__head__right__head">
+                                    <h6>168,50</h6>
+                                    <h6> ₽</h6>
+                                 </div>
+                                 <h5>Обычная</h5>
+                              </div>
+                           </div>
+                           <h3>Молоко сгущенное РОГАЧЕВ Егорка, цельное с сахаром...</h3>
+                           <img src="image/category/rating25.png" alt="">
+                           <a href="cart.html"><button>В корзину</button></a>
+                        </div>
+                     </div>
+                  </t>
+                  <t style="display:none">
+                     <div class="news__item__card">
+                        <a href="product.html"><img class="news1" src="image/category/category4.png" alt=""></a>
+                        <img class="news__like" src="image/home/like.svg" alt="">
+
+                        <div class="card__main">
+                           <div class="card__head">
+                              <div class="card__haed__left">
+                                 <div class="card__head__left__head">
+                                    <h4>192,99</h4>
+                                    <h4> ₽</h4>
+                                 </div>
+
+                              </div>
+                           </div>
+                           <h3>
+                              Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»
+                              В корзину</h3>
+                           <img src="image/home/star3.svg" alt="">
+                           <a href="cart.html"><button>В корзину</button></a>
+                        </div>
+                     </div>
+                  </t>
+                  <t style="display:none">
+                     <div class="news__item__card">
+                        <a href="product.html"><img class="news1" src="image/category/category5.png" alt=""></a>
+                        <img class="news__like" src="image/home/like.svg" alt="">
+
+                        <div class="card__main">
+                           <div class="card__head">
+                              <div class="card__head__left">
+                                 <div class="card__head__left__head">
+                                    <h4>29,99</h4>
+                                    <h4> ₽</h4>
+                                 </div>
+
+                              </div>
+                           </div>
+                           <h3>
+                              Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»
+                              В корзину</h3>
+                           <img src="image/home/star3.svg" alt="">
+                           <a href="cart.html"><button>В корзину</button></a>
+                        </div>
+                     </div>
+                  </t>
+                  <t style="display:none">
+                     <div class="news__item__card">
+                        <a href="product.html"><img class="news1" src="image/category/category6.png" alt=""></a>
+                        <img class="news__like" src="image/home/like.svg" alt="">
+
+                        <div class="card__main">
+                           <div class="card__head">
+                              <div class="card__haed__left">
+                                 <div class="card__head__left__head">
+                                    <h4>29,99</h4>
+                                    <h4> ₽</h4>
+                                 </div>
+
+                              </div>
+                           </div>
+                           <h3>
+                              Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»
+                              В корзину</h3>
+                           <img src="image/home/star3.svg" alt="">
+                           <a href="cart.html"><button>В корзину</button></a>
+                        </div>
+                     </div>
+                  </t>
+                  <t style="display:none">
+                     <div class="news__item__card">
+                        <a href="product.html"><img class="news1" src="image/category/category1.png" alt=""></a>
+                        <img class="news__like" src="image/home/like.svg" alt="">
+
+                        <div class="card__main">
+                           <div class="card__head">
+                              <div class="card__head__left">
+                                 <div class="card__head__left__head">
+                                    <h4>139,99</h4>
+                                    <h4> ₽</h4>
+                                 </div>
+
+                              </div>
+                           </div>
+                           <h3>
+                              Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»
+                              В корзину
+                              <br></h3>
+                           <img src="image/home/star3.svg" alt="">
+                           <a href="cart.html"><button>В корзину</button></a>
+                        </div>
+                     </div>
+                  </t>
+                  <t style="display:none">
+                     <div class="action__item__card">
+                        <a href="product.html"><img class="action1" src="image/home/action2.png" alt=""></a>
+                        <img class="action__like demo" id="demo" onclick="removeButton(event)" src="image/home/like.svg"
+                           alt="">
+                        <h2>-50%</h2>
+                        <div class="card__main">
+                           <div class="card__head">
+                              <div class="card__haed__left">
+                                 <div class="card__head__left__head">
+                                    <h4>69,99 </h4>
+                                    <h4> ₽</h4>
+                                 </div>
+                                 <h5>С картой</h5>
+                              </div>
+                              <div class="card__haed__right">
+                                 <div class="card__head__right__head">
+                                    <h6>140,50 </h6>
+                                    <h6> ₽</h6>
+                                 </div>
+                                 <h5>Обычная</h5>
+                              </div>
+                           </div>
+                           <h3>Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное ...</h3>
+                           <img src="image/category/rating25.png" alt="">
+                           <a href="cart.html"><button>В корзину</button></a>
+                        </div>
+                     </div>
+                  </t>
+                  <t style="display:none">
+                     <div class="action__item__card">
+                        <a href="product.html"><img class="action1" src="image/category/category3.png" alt=""></a>
+                        <img class="action__like demo" id="demo" onclick="removeButton(event)" src="image/home/like.svg"
+                           alt="">
+                        <h2>-50%</h2>
+                        <div class="card__main">
+                           <div class="card__head">
+                              <div class="card__haed__left">
+                                 <div class="card__head__left__head">
+                                    <h4>77,99 </h4>
+                                    <h4> ₽</h4>
+                                 </div>
+                                 <h5>С картой</h5>
+                              </div>
+                              <div class="card__haed__right">
+                                 <div class="card__head__right__head">
+                                    <h6>168,50</h6>
+                                    <h6> ₽</h6>
+                                 </div>
+                                 <h5>Обычная</h5>
+                              </div>
+                           </div>
+                           <h3>Молоко сгущенное РОГАЧЕВ Егорка, цельное с сахаром...</h3>
+                           <img src="image/category/rating25.png" alt="">
+                           <a href="cart.html"><button>В корзину</button></a>
+                        </div>
+                     </div>
+                  </t>
+                  <t style="display:none">
+                     <div class="news__item__card">
+                        <a href="product.html"><img class="news1" src="image/category/category4.png" alt=""></a>
+                        <img class="news__like" src="image/home/like.svg" alt="">
+
+                        <div class="card__main">
+                           <div class="card__head">
+                              <div class="card__haed__left">
+                                 <div class="card__head__left__head">
+                                    <h4>192,99</h4>
+                                    <h4> ₽</h4>
+                                 </div>
+
+                              </div>
+                           </div>
+                           <h3>
+                              Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»
+                              В корзину</h3>
+                           <img src="image/home/star3.svg" alt="">
+                           <a href="cart.html"><button>В корзину</button></a>
+                        </div>
+                     </div>
+                  </t>
+                  <t style="display:none">
+                     <div class="news__item__card">
+                        <a href="product.html"><img class="news1" src="image/category/category5.png" alt=""></a>
+                        <img class="news__like" src="image/home/like.svg" alt="">
+
+                        <div class="card__main">
+                           <div class="card__head">
+                              <div class="card__head__left">
+                                 <div class="card__head__left__head">
+                                    <h4>29,99</h4>
+                                    <h4> ₽</h4>
+                                 </div>
+
+                              </div>
+                           </div>
+                           <h3>
+                              Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»
+                              В корзину</h3>
+                           <img src="image/home/star3.svg" alt="">
+                           <a href="cart.html"><button>В корзину</button></a>
+                        </div>
+                     </div>
+                  </t>
+                  <t style="display:none">
+                     <div class="news__item__card">
+                        <a href="product.html"><img class="news1" src="image/category/category6.png" alt=""></a>
+                        <img class="news__like" src="image/home/like.svg" alt="">
+
+                        <div class="card__main">
+                           <div class="card__head">
+                              <div class="card__haed__left">
+                                 <div class="card__head__left__head">
+                                    <h4>29,99</h4>
+                                    <h4> ₽</h4>
+                                 </div>
+
+                              </div>
+                           </div>
+                           <h3>
+                              Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»
+                              В корзину</h3>
+                           <img src="image/home/star3.svg" alt="">
+                           <a href="cart.html"><button>В корзину</button></a>
+                        </div>
+                     </div>
+                  </t>
+               </div>
+               <button id="loadMoreprodDiv" class='loadMore'>Показать ещё</button>
+
+               <ul id="paginated-list" data-current-page="1" aria-live="polite">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <!-- pagination -->
+
+               </ul>
+
+               <nav class="pagination-container">
+                  <button class="pagination-button" id="prev-button" aria-label="Previous page" title="Previous page">
+                     &lt;
+                  </button>
+
+                  <div id="pagination-numbers">
+
+                  </div>
+
+                  <button class="pagination-button" id="next-button" aria-label="Next page" title="Next page">
+                     &gt;
+                  </button>
+               </nav>
+            </div>
+         </section>
+      </div>
+   </main>
+
+   <footer id="footer">
+      <div class="container footer">
+         <img src="image/home/footer-logo.png" alt="">
+         <div class="footer__link">
+            <li><a href="about.html">О компании</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+            <li><a class="aktiv" href="vacancy.html">Вакансии</a></li>
+            <li><a href="articles.html">Статьи</a></li>
+            <li><a href="#">Политика обработки персональных данных</a></li>
+         </div>
+         <div class="footer__social">
+            <img src="image/home/instagram.svg" alt="">
+            <img src="image/home/vkontakte.svg" alt="">
+            <img src="image/home/twitter.svg" alt="">
+            <img src="image/home/ok.svg" alt="">
+         </div>
+         <div class="footer__phone">
+            <img src="image/home/phone.svg" alt="">
+            <h3><a href="tel:+998904969007">+998 90 496 90 07</a></h3>
+         </div>
+      </div>
+      <div class="container dark__footer">
+         <h4>Дизайн</h4>
+         <img src="image/home/zasovskiy.svg" alt="">
+      </div>
+      <div class="container footer__link2">
+         <div class="footer__link2">
+            <li><a href="about.html">О компании</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+            <li><a href="vacancy.html">Вакансии</a></li>
+            <li><a href="articles.html">Статьи</a></li>
+            <li><a href="#">Политика обработки персональных данных</a></li>
+         </div>
+      </div>
+
+   </footer>
+   <footer id="footer__fixed">
+      <div class="container footer__fixed">
+         <div class="fixed__menu">
+            <a href="category.html"><img src="image/home/footer-mune].png" alt="">
+               <h6>Каталог</h6>
+            </a>
+         </div>
+         <div class="fixed__menu">
+            <a href="favorite.html"><img src="image/home/hearth.png" alt="">
+               <h6>Избранное</h6>
+            </a>
+         </div>
+         <div class="fixed__menu">
+            <a href="#"><img src="image/home/product.png" alt="">
+               <h6>Заказы</h6>
+            </a>
+         </div>
+         <div class="fixed__menu">
+            <a href="cart.html"><img src="image/home/cart.png" alt="">
+               <h6>Корзина</h6>
+            </a>
+         </div>
+         <div class="fixed__menu">
+            <img src="image/home/accaunt.png" alt="">
+         </div>
+      </div>
+   </footer>
+   <script src="js/tabs.js"></script>
+   <script src="js/main.js"></script>
+   <script src="js/show.js"></script>
+   <script src="js/pagination.js"></script>
+</body>
+
+</html>

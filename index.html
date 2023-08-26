@@ -24,7 +24,7 @@
         </div>
         <div class="navbar__catalog">
           <button><img src="image/home/menu.svg" alt=""></button>
-          <a class="navbar__link" href="categories.html">Каталог</a>
+          <a class="navbar__link" href="category.html">Каталог</a>
         </div>
         <div class="navbar__input">
           <input type="text" placeholder="Найти товар">
@@ -82,7 +82,7 @@
         <div class="action__item">
           <div class="action__item__card">
             <a href="product.html"><img class="action1" src="image/home/action1.png" alt=""></a>
-            <img class="action__like" src="image/home/like.svg" alt="">
+            <img class="action__like demo" id="demo" onclick="removeButton(event)" src="image/home/like.svg" alt="">
             <h2>-50%</h2>
             <div class="card__main">
               <div class="card__head">
@@ -108,7 +108,7 @@
           </div>
           <div class="action__item__card res2">
             <a href="product.html"><img class="action1" src="image/home/action2.png" alt=""></a>
-            <img class="action__like" src="image/home/like.svg" alt="">
+            <img class="action__like demo"  onclick="removeButton(event)" src="image/home/like.svg" alt="">
             <h2>-50%</h2>
             <div class="card__main">
               <div class="card__head">
@@ -129,7 +129,10 @@
               </div>
               <h3>Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...</h3>
               <img src="image/home/star33.svg" alt="">
-              <a href="cart.html"><button>В корзину</button></a>
+              <a href="cart.html"><button  >В корзину</button></a>
+              <!-- <button id="demo" class="button" onclick="removeButton(event)">
+                demo
+              </button> -->
             </div>
           </div>
           <div class="action__item__card res1">
@@ -548,8 +551,10 @@
       </div>
     </div>
   </footer>
+  <script src="js/confetti.min.js"></script>
   <script src="js/tabs.js"></script>
   <script src="js/main.js"></script>
+
 </body>
 
 </html>
