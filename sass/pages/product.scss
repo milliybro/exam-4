@@ -38,6 +38,7 @@ main {
       align-items: center;
       gap: 16px;
       padding-top: 27px;
+      flex-wrap: wrap;
 
       a {
         color: var(--main-on-surface, #414141);
@@ -72,6 +73,7 @@ main {
       gap: 24px;
       align-items: center;
       padding-bottom: 16px;
+      flex-wrap: wrap;
 
       h6 {
         color: var(--main-on-surface, #414141);
@@ -117,6 +119,9 @@ main {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 40px;
+      @media (max-width:815px){
+        grid-template-columns: repeat(1, 1fr);
+      }
       &__left {
         img {
           width: 100%;

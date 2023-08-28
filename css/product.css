@@ -774,6 +774,7 @@ main {
   align-items: center;
   gap: 16px;
   padding-top: 27px;
+  flex-wrap: wrap;
 }
 #hero .hero__head a {
   color: var(--main-on-surface, #414141);
@@ -805,6 +806,7 @@ main {
   gap: 24px;
   align-items: center;
   padding-bottom: 16px;
+  flex-wrap: wrap;
 }
 #product .product .product__infor h6 {
   color: var(--main-on-surface, #414141);
@@ -850,6 +852,11 @@ main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
+}
+@media (max-width: 815px) {
+  #product .product .product__img {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 #product .product .product__img__left {
   display: grid;
