@@ -19,12 +19,17 @@
     <nav id="navbar">
       <div class="container navbar__container">
         <div class="navbar__logo">
-          <a href="index.html"><img class="logo__face" src="image/home/logo-face.png" alt="">
-            <img class="logo__title" src="image/home/logo.png" alt=""></a>
+          <a href="index.html">
+            <img class="logo__title" src="image/home/logo.png" alt="">
+            <img class="logo__faces" src="image/home/face_logo.svg" alt="">
+            <img class="logo__title" src="image/home/logo.png" alt="">
+
+          </a>
         </div>
         <div class="navbar__catalog">
-          <button><img src="image/home/menu.svg" alt=""></button>
-          <a class="navbar__link" href="category.html">Каталог</a>
+          <button class="burger"><img src="image/home/menu.svg" alt=""></button>
+          
+          <a class="navbar__link" href="categories.html">Каталог</a>
         </div>
         <div class="navbar__input">
           <input type="text" placeholder="Найти товар">
@@ -60,6 +65,7 @@
           </a>
         </div>
       </div>
+      <ul class="container menu d-none"></ul>
     </nav>
   </header>
   <main>
@@ -80,113 +86,7 @@
           </div>
         </div>
         <div class="action__item">
-          <div class="action__item__card">
-            <a href="product.html"><img class="action1" src="image/home/action1.png" alt=""></a>
-            <img class="action__like demo" id="demo" onclick="removeButton(event)" src="image/home/like.svg" alt="">
-            <h2>-50%</h2>
-            <div class="card__main">
-              <div class="card__head">
-                <div class="card__haed__left">
-                  <div class="card__head__left__head">
-                    <h4>44,50 </h4>
-                    <h4> ₽</h4>
-                  </div>
-                  <h5>С картой</h5>
-                </div>
-                <div class="card__haed__right">
-                  <div class="card__head__right__head">
-                    <h6>44,50 </h6>
-                    <h6> ₽</h6>
-                  </div>
-                  <h5>Обычная</h5>
-                </div>
-              </div>
-              <h3>Г/Ц Блинчики с мясом вес, <br> Россия</h3>
-              <img src="image/home/star3.svg" alt="">
-              <a href="cart.html"><button>В корзину</button></a>
-            </div>
-          </div>
-          <div class="action__item__card res2">
-            <a href="product.html"><img class="action1" src="image/home/action2.png" alt=""></a>
-            <img class="action__like demo"  onclick="removeButton(event)" src="image/home/like.svg" alt="">
-            <h2>-50%</h2>
-            <div class="card__main">
-              <div class="card__head">
-                <div class="card__haed__left">
-                  <div class="card__head__left__head">
-                    <h4>44,50 </h4>
-                    <h4> ₽</h4>
-                  </div>
-                  <h5>С картой</h5>
-                </div>
-                <div class="card__haed__right">
-                  <div class="card__head__right__head">
-                    <h6>44,50 </h6>
-                    <h6> ₽</h6>
-                  </div>
-                  <h5>Обычная</h5>
-                </div>
-              </div>
-              <h3>Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...</h3>
-              <img src="image/home/star33.svg" alt="">
-              <a href="cart.html"><button  >В корзину</button></a>
-              <!-- <button id="demo" class="button" onclick="removeButton(event)">
-                demo
-              </button> -->
-            </div>
-          </div>
-          <div class="action__item__card res1">
-            <a href="product.html"><img class="action1" src="image/home/action3.png" alt=""></a>
-            <img class="action__like" src="image/home/like.svg" alt="">
-            <h2>-50%</h2>
-            <div class="card__main">
-              <div class="card__head">
-                <div class="card__haed__left">
-                  <div class="card__head__left__head">
-                    <h4>44,50 </h4>
-                    <h4> ₽</h4>
-                  </div>
-                  <h5>С картой</h5>
-                </div>
-                <div class="card__haed__right">
-                  <div class="card__head__right__head">
-                    <h6>44,50 </h6>
-                    <h6> ₽</h6>
-                  </div>
-                  <h5>Обычная</h5>
-                </div>
-              </div>
-              <h3>Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...</h3>
-              <img src="image/home/star5.svg" alt="">
-              <a href="cart.html"><button>В корзину</button></a>
-            </div>
-          </div>
-          <div class="action__item__card res">
-            <a href="product.html"><img class="action1" src="image/home/action4.png" alt=""></a>
-            <img class="action__like" src="image/home/like.svg" alt="">
-            <h2>-50%</h2>
-            <div class="card__main">
-              <div class="card__head">
-                <div class="card__haed__left">
-                  <div class="card__head__left__head">
-                    <h4>44,50 </h4>
-                    <h4> ₽</h4>
-                  </div>
-                  <h5>С картой</h5>
-                </div>
-                <div class="card__haed__right">
-                  <div class="card__head__right__head">
-                    <h6>44,50 </h6>
-                    <h6> ₽</h6>
-                  </div>
-                  <h5>Обычная</h5>
-                </div>
-              </div>
-              <h3>Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...</h3>
-              <img src="image/home/star45.svg" alt="">
-              <a href="cart.html"><button>В корзину</button></a>
-            </div>
-          </div>
+
         </div>
       </div>
     </section>
@@ -200,91 +100,7 @@
           </div>
         </div>
         <div class="news__item">
-          <div class="news__item__card">
-            <a href="product.html"><img class="news1" src="image/home/news1.png" alt=""></a>
-            <img class="news__like" src="image/home/like.svg" alt="">
 
-            <div class="card__main">
-              <div class="card__head">
-                <div class="card__haed__left">
-                  <div class="card__head__left__head">
-                    <h4>599,99</h4>
-                    <h4> ₽</h4>
-                  </div>
-
-                </div>
-              </div>
-              <h3>
-                Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»
-                В корзину</h3>
-              <img src="image/home/star3.svg" alt="">
-              <a href="cart.html"><button>В корзину</button></a>
-            </div>
-          </div>
-          <div class="news__item__card res2">
-            <a href="product.html">
-              <img src="image/home/action3.png" alt="">
-            </a>
-            <img class="news__like" src="image/home/like.svg" alt="">
-
-            <div class="card__main">
-              <div class="card__head">
-                <div class="card__haed__left">
-                  <div class="card__head__left__head">
-                    <h4>44,50</h4>
-                    <h4> ₽</h4>
-                  </div>
-
-                </div>
-              </div>
-              <h3>
-                Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...</h3>
-              <img src="image/home/star5.svg" alt="">
-              <a href="cart.html"><button>В корзину</button></a>
-            </div>
-          </div>
-          <div class="news__item__card res1">
-            <a href="product.html"><img class="news1" src="image/home/action4.png" alt=""></a>
-            <img class="news__like" src="image/home/like.svg" alt="">
-
-            <div class="card__main">
-              <div class="card__head">
-                <div class="card__haed__left">
-                  <div class="card__head__left__head">
-                    <h4>159,99</h4>
-                    <h4> ₽</h4>
-                  </div>
-
-                </div>
-              </div>
-              <h3>
-                Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»
-                В корзину</h3>
-              <img src="image/home/star3.svg" alt="">
-              <a href="cart.html"><button>В корзину</button></a>
-            </div>
-          </div>
-          <div class="news__item__card res">
-            <a href="product.html"><img class="news1" src="image/home/news2.png" alt=""></a>
-            <img class="news__like" src="image/home/like.svg" alt="">
-
-            <div class="card__main">
-              <div class="card__head">
-                <div class="card__haed__left">
-                  <div class="card__head__left__head">
-                    <h4>599,99</h4>
-                    <h4> ₽</h4>
-                  </div>
-
-                </div>
-              </div>
-              <h3>
-                Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»
-                В корзину</h3>
-              <img src="image/home/star3.svg" alt="">
-              <a href="cart.html"><button>В корзину</button></a>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -298,90 +114,7 @@
             <img src="image/home/link.svg" alt="">
           </div>
         </div>
-        <div class="news__item">
-          <div class="news__item__card">
-            <a href="product.html"><img class="news1" src="image/home/shop.png" alt=""></a>
-            <img class="news__like" src="image/home/like.svg" alt="">
-
-            <div class="card__main">
-              <div class="card__head">
-                <div class="card__haed__left">
-                  <div class="card__head__left__head">
-                    <h4>77,99</h4>
-                    <h4> ₽</h4>
-                  </div>
-
-                </div>
-              </div>
-              <h3>
-                Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»
-                В корзину</h3>
-              <img src="image/home/star3.svg" alt="">
-              <a href="cart.html"><button>В корзину</button></a>
-            </div>
-          </div>
-          <div class="news__item__card">
-            <a href="product.html"><img class="news1" src="image/home/action4.png" alt=""></a>
-            <img class="news__like" src="image/home/like.svg" alt="">
-
-            <div class="card__main">
-              <div class="card__head">
-                <div class="card__haed__left">
-                  <div class="card__head__left__head">
-                    <h4>159,99</h4>
-                    <h4> ₽</h4>
-                  </div>
-
-                </div>
-              </div>
-              <h3>
-                Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...</h3>
-              <img src="image/home/star3.svg" alt="">
-              <a href="cart.html"><button>В корзину</button></a>
-            </div>
-          </div>
-          <div class="news__item__card">
-            <a href="product.html"><img class="news1" src="image/home/news1.png" alt=""></a>
-            <img class="news__like" src="image/home/like.svg" alt="">
-
-            <div class="card__main">
-              <div class="card__head">
-                <div class="card__haed__left">
-                  <div class="card__head__left__head">
-                    <h4>599,99</h4>
-                    <h4> ₽</h4>
-                  </div>
-
-                </div>
-              </div>
-              <h3>
-                Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»
-                В корзину</h3>
-              <img src="image/home/star3.svg" alt="">
-              <a href="cart.html"><button>В корзину</button></a>
-            </div>
-          </div>
-          <div class="news__item__card res">
-            <a href="product.html"><img class="news1" src="image/home/shop2.png" alt=""></a>
-            <img class="news__like" src="image/home/like.svg" alt="">
-
-            <div class="card__main">
-              <div class="card__head">
-                <div class="card__haed__left">
-                  <div class="card__head__left__head">
-                    <h4>49,39</h4>
-                    <h4> ₽</h4>
-                  </div>
-
-                </div>
-              </div>
-              <h3>
-                Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»
-                В корзину</h3>
-              <img src="image/home/star3.svg" alt="">
-              <a href="cart.html"><button>В корзину</button></a>
-            </div>
-          </div>
+        <div class="shop__item">
         </div>
       </div>
     </section>
@@ -392,7 +125,7 @@
           Специальные предложения
         </h2>
         <div class="app__item">
-          <div class="app__item__left">
+          <!-- <div class="app__item__left">
             <div class="left__text">
               <h3>Оформите карту «Северяночка»</h3>
               <p>И получайте бонусы при покупке в магазинах и на сайте</p>
@@ -405,7 +138,7 @@
               <p>И получайте вдвое больше бонусов</p>
             </div>
             <img src="image/home/app2.png" alt="">
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
@@ -450,38 +183,7 @@
           </div>
         </div>
         <div class="surface__items">
-          <div class="surface__items__card">
-            <img src="image/home/surface1.png" alt="">
-            <div class="surface__content">
-              <h6>05.03.2021</h6>
-              <h3>Режим использования масок и перчаток на территории магазинов</h3>
-              <p>Подробная информация о режимах использования масок и перчаток на территории магазинов "ЛЕНТА".
-                Информация обновляется каждый будний день.</p>
-              <a href="articles.html"><button>Подробнее</button>
-              </a>
-            </div>
-          </div>
-          <div class="surface__items__card">
-            <img src="image/home/surface2.png" alt="">
-            <div class="surface__content">
-              <h6>05.03.2021</h6>
-              <h3>Весеннее настроение для каждой</h3>
-              <p>8 Марта – это не просто Международный женский день, это ещё день тюльпанов, приятных сюрпризов и
-                праздничных тёплых пожеланий.</p>
-              <br>
-              <a href="articles.html"><button>Подробнее</button></a>
-            </div>
-          </div>
-          <div class="surface__items__card res">
-            <img src="image/home/surface3.png" alt="">
-            <div class="surface__content">
-              <h6>22.02.2020</h6>
-              <h3>ЗОЖ или ФАСТФУД. А вы на чьей стороне? Голосуем!</h3>
-              <p>Голосуйте за любимые категории, выбирайте категорию-победителя в мобильном приложении и получайте
-                кешбэк 10% баллами в апреле!</p>
-              <a href="articles.html"><button>Подробнее</button></a>
-            </div>
-          </div>
+          
 
         </div>
       </div>
@@ -551,9 +253,10 @@
       </div>
     </div>
   </footer>
-  <script src="js/confetti.min.js"></script>
   <script src="js/tabs.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/products-data.js"></script>
+  <script src="js/categories-data.js"></script>
+  <script src="js/home.js"></script>
 
 </body>
 
