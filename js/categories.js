@@ -32,6 +32,7 @@ categories.map((el)=>{
 })
 
 
+
 const categoryMenu = document.querySelector(".burger");
 const categorydown = document.querySelector(".menu");
 

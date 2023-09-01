@@ -655,134 +655,128 @@ header {
 }
 
 main {
+  padding-top: 110px;
   background: var(--main-bg-page, #fbf8ec);
+  padding-bottom: 50px;
 }
 
-#hero .hero__head {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  padding-top: 27px;
-}
-#hero .hero__head a {
+#hero .hero__container h1 {
   color: var(--main-on-surface, #414141);
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%; /* 18px */
-}
-#hero .hero__head .href {
-  color: var(--grayscale-hard, #8f8f8f);
-}
-#hero .hero h1 {
-  color: var(--main-on-surface, #414141);
-  padding-top: 24px;
-  padding-bottom: 40px;
-  font-family: Rubik;
-  font-size: 64px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 150%; /* 96px */
-}
-#hero .hero__contact {
-  padding-bottom: 120px;
-  display: flex;
-  gap: 80px;
-}
-@media (max-width: 630px) {
-  #hero .hero__contact {
-    flex-wrap: wrap;
-    margin: 0 auto;
-    justify-content: center;
-    text-align: center;
-  }
-}
-#hero .hero__contact__left, #hero .hero__contact__right {
-  display: flex;
-  align-items: start;
-  gap: 8px;
-}
-#hero .hero__contact__left h3, #hero .hero__contact__right h3 {
-  color: var(--main-on-surface, #414141);
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%; /* 36px */
-}
-#hero .hero__contact__left h2, #hero .hero__contact__right h2 {
-  color: var(--main-on-surface, #414141);
-  font-family: Rubik;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 150%; /* 36px */
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-  padding-top: 16px;
-  cursor: pointer;
-}
-
-#shop .shop h1 {
-  color: var(--main-on-surface, #414141);
-  padding-bottom: 40px;
   font-family: Rubik;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
   line-height: 150%; /* 54px */
 }
-#shop .shop__btn {
-  display: flex;
-  gap: 24px;
-  overflow: hidden;
+#hero .hero__container .product-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 40px;
+  padding-bottom: 80px;
 }
-#shop .shop__btn button {
+@media (max-width: 1245px) {
+  #hero .hero__container .product-row {
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+  }
+}
+@media (max-width: 950px) {
+  #hero .hero__container .product-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #hero .hero__container .product-row .none {
+    display: none;
+  }
+}
+@media (max-width: 450px) {
+  #hero .hero__container .product-row {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
+}
+
+.cards {
   border-radius: 4px;
-  background: var(--grayscale-lightest, #f3f2f1);
-  color: var(--grayscale-hardest, #606060);
-  text-align: center;
+  background: var(--main-surface, #fff);
+  /* Default/XS */
+  box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.cards .card-like {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+.cards .card-body {
   padding: 8px;
+}
+.cards .card-price {
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 27px */
+}
+.cards .card-text {
+  padding-top: 8px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  color: var(--main-on-surface, #414141);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 24px */
 }
-#shop .shop__btn button:hover {
-  background: var(--main-secondary, #70c05b);
-  color: var(--main-on-secondary, #fff);
-}
-#shop .shop__btn .activ-btn {
+.cards .btn-primary {
   border-radius: 4px;
-  background: var(--main-secondary, #70c05b);
-  color: var(--main-on-secondary, #fff);
+  border: 1px solid var(--main-secondary, #70c05b);
+  padding: 8px;
+  background-color: transparent;
+  color: var(--main-secondary, #70c05b);
+  text-align: center;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  width: 100%;
 }
-#shop .shop__contact {
-  display: flex;
-  gap: 80px;
-  padding: 32px 0;
+.cards .btn-primary:hover {
+  background: var(--main-primary, #f63);
+  color: #fff;
+  border-color: var(--main-primary, #f63);
 }
-@media (max-width: 950px) {
-  #shop .shop__contact {
-    flex-wrap: wrap;
-    margin: 0 auto;
-    justify-content: center;
-  }
-}
-#shop .shop__contact__card .card__home,
-#shop .shop__contact__card .card__phone {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-#shop .shop__contact__card h3 {
-  padding-top: 10px;
+.cards h2 {
   color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 36px */
+}
+.cards h4 {
+  color: var(--main-on-surface, #414141);
+  padding-top: 16px;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 27px */
 }
-#shop .shop__contact__card h4 {
+.cards p {
+  color: var(--main-on-surface, #414141);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+.cards .card__phone {
+  display: flex;
+  align-items: center;
+}
+.cards h3 {
   color: var(--main-on-surface, #414141);
   font-family: Rubik;
   font-size: 18px;
@@ -791,9 +785,57 @@ main {
   line-height: 150%; /* 27px */
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
-  padding-top: 11px;
+  cursor: pointer;
 }
-#shop .shop .map {
-  padding-bottom: 80px;
-  width: 100%;
+
+.pagination {
+  justify-content: center;
+  display: flex;
+  gap: 20px !important;
+}
+
+.active .page-link {
+  border-radius: 4px;
+  border: 0px solid var(--main-primary, #f63) !important;
+  color: var(--main-primary, #f63) !important;
+  background-color: transparent !important;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+
+.page-item .page-link {
+  color: var(--grayscale-hardest, #606060);
+  text-align: center;
+  /* Desc/Text/S */
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  background-color: transparent;
+  border: none;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  padding: 40px;
+}
+.menu li a {
+  color: var(--main-on-surface, #414141);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 24px */
+}
+.menu li a:hover {
+  color: #f63;
+}
+
+.d-none {
+  display: none;
 }

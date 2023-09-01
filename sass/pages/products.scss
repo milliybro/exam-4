@@ -1,0 +1,193 @@
+@use "../global";
+@use "../layout/header";
+@use "../layout/footer";
+@use "../utils/mixins" as mxn;
+@use "../utils/variables" as var;
+@use "../themes/backtop";
+@use "../themes/loading";
+main {
+  padding-top: 110px;
+  background: var(--main-bg-page, #fbf8ec);
+  padding-bottom: 50px;
+}
+#hero {
+  .hero__container {
+    h1 {
+      color: var(--main-on-surface, #414141);
+      font-family: Rubik;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 150%; /* 54px */
+    }
+    .product-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 40px;
+      padding-bottom: 80px;
+      @media (max-width: 1245px) {
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+      }
+      @media (max-width: 950px) {
+        grid-template-columns: repeat(2, 1fr);
+        .none {
+          display: none;
+        }
+      }
+      @media (max-width: 450px) {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+      }
+    }
+  }
+}
+.cards {
+  border-radius: 4px;
+  background: var(--main-surface, #fff);
+
+  /* Default/XS */
+  box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  position: relative;
+  .card-like {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  }
+
+  .card-body {
+    padding: 8px;
+  }
+  .card-price {
+    color: var(--main-on-surface, #414141);
+    font-family: Rubik;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 27px */
+  }
+  .card-text {
+    padding-top: 8px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    color: var(--main-on-surface, #414141);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+  }
+  .btn-primary {
+    border-radius: 4px;
+    border: 1px solid var(--main-secondary, #70c05b);
+    padding: 8px;
+    background-color: transparent;
+    color: var(--main-secondary, #70c05b);
+    text-align: center;
+    font-family: Rubik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    width: 100%;
+    &:hover {
+      background: var(--main-primary, #f63);
+      color: #fff;
+      border-color: var(--main-primary, #f63);
+    }
+  }
+
+  h2 {
+    color: var(--main-on-surface, #414141);
+    font-family: Rubik;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 36px */
+  }
+  h4 {
+    color: var(--main-on-surface, #414141);
+    padding-top: 16px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+  }
+  p {
+    color: var(--main-on-surface, #414141);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+  }
+  .card__phone {
+    display: flex;
+    align-items: center;
+  }
+  h3 {
+    color: var(--main-on-surface, #414141);
+    font-family: Rubik;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+    text-decoration-line: underline;
+    cursor: pointer;
+  }
+}
+.pagination{
+   justify-content: center;
+  display: flex;
+  gap: 20px !important;
+}
+.active {
+  .page-link {
+    border-radius: 4px;
+    border: 0px solid var(--main-primary, #f63) !important;
+    color: var(--main-primary, #f63) !important;
+    background-color: transparent !important;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+  }
+}
+.page-item {
+  .page-link{
+   color: var(--grayscale-hardest, #606060);
+  text-align: center;
+
+  /* Desc/Text/S */
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  background-color: transparent;
+  border: none;
+  }
+}
+.menu {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  padding: 40px;
+  li {
+    a {
+      color: var(--main-on-surface, #414141);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 150%; /* 24px */
+      &:hover {
+        color: #f63;
+      }
+    }
+  }
+}
+
+.d-none {
+  display: none;
+}

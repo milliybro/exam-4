@@ -6,6 +6,11 @@
   @extend %container;
 }
 
+.container-lg{
+  max-width: func.container(1440, 0);
+  @extend %container;
+}
+
 .container-md {
   max-width: func.container(1500, 238);
   @extend %container;

@@ -62,7 +62,7 @@ a {
   padding-top: 80px;
 }
 
-.container, .container-md, .container-sm {
+.container, .container-lg, .container-md, .container-sm {
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
@@ -71,6 +71,10 @@ a {
 
 .container {
   max-width: 1248px;
+}
+
+.container-lg {
+  max-width: 1480px;
 }
 
 .container-md {
