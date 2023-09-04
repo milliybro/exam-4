@@ -98,7 +98,7 @@ a.append(productCardImg)
     nameLink,
     productCardContent,
     productCardRating,
-    cartLink
+    productCardButton
   );
   productCard.append(
     a,

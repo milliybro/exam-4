@@ -19,57 +19,54 @@
   </div>
   <header>
     <nav id="navbar">
-      <div class="container navbar__container">
-        <div class="navbar__logo">
-          <a href="index.html">
-            <img class="logo__title" src="image/home/logo.png" alt="">
-            <img class="logo__faces" src="image/home/face_logo.svg" alt="">
-            <img class="logo__title" src="image/home/logo.png" alt="">
-
-          </a>
-        </div>
-        <div class="navbar__catalog">
-          <button class="burger"><img src="image/home/menu.svg" alt=""></button>
-          
-          <a class="navbar__link" href="categories.html">Каталог</a>
-        </div>
-        <div class="navbar__input">
-          <input type="text" placeholder="Найти товар">
-          <img src="image/home/lupa.png" alt="">
-        </div>
-        <div class="navbar__menu">
-          <div class="navbar__menu__heart">
-
-            <a href="favorite.html">
-              <img src="image/home/hearth.png" alt="">
-              <h3>Избранное</h3>
-            </a>
+       <div class="container navbar__container">
+          <div class="navbar__logo">
+             <a href="index.html"><img class="logo__face" src="image/home/logo-face.png" alt="">
+                <img class="logo__title" src="image/home/logo.png" alt=""></a>
           </div>
-          <div class="navbar__menu__product">
+          <div class="navbar__catalog">
+             <button class="burger"><img src="image/home/menu.svg" alt=""></button>
+             <a class="navbar__link" href="category.html">Каталог</a>
+          </div>
+          <div class="navbar__input ">
+             <input class="search-input" type="text" placeholder="Найти товар">
+             <img src="image/home/lupa.png" alt="">
+          </div>
+          <div class="navbar__menu">
+             <div class="navbar__menu__heart">
 
-            <a href="products.html">
-              <img src="image/home/product.png" alt="fdbc">
-              <h3>продукты</h3>
-            </a>
+                <a href="favorite.html">
+                   <img src="image/home/hearth.png" alt="">
+                   <h3>Избранное</h3>
+                   <span class="favorite-count  badge bg-primary"></span>
+                </a>
+             </div>
+             <div class="navbar__menu__product">
+
+                <a href="products.html">
+                   <img src="image/home/product.png" alt="fdbc">
+                   <h3>продукты</h3>
+                </a>
+             </div>
+             <div class="navbar__menu__cart">
+                <a href="cart.html">
+                   <img src="image/home/cart.png" alt="">
+                      <h3>Корзина<h3>
+                      <span class="cart-count badge bg-primary"></span>
+                </a>
+             </div>
           </div>
-          <div class="navbar__menu__cart">
-            <a href="cart.html">
-              <img src="image/home/cart.png" alt="">
-              <h3>Корзина<h3>
-            </a>
+          <div class="navbar__account">
+             <a href="">
+                <img src="image/home/accaunt.png" alt="">
+                <h2>Алексей</h2>
+                <img class="nav__acc" src="image/home/arrow.png" alt="">
+             </a>
           </div>
-        </div>
-        <div class="navbar__account">
-          <a href="">
-            <img src="image/home/accaunt.png" alt="">
-            <h2>Алексей</h2>
-            <img class="nav__acc" src="image/home/arrow.png" alt="">
-          </a>
-        </div>
-      </div>
-      <ul class="container menu d-none"></ul>
+       </div>
+       <ul class="container menu d-none"></ul>
     </nav>
-  </header>
+ </header>
   <main>
     <section id="hero">
       <div class="container hero">
@@ -276,9 +273,11 @@
   
   
   "></script>
+  <script src="js/main.js"></script>
   <script src="js/products-data.js"></script>
   <script src="js/categories-data.js"></script>
   <script src="js/home.js"></script>
+  <script src="js/products.js"></script>
 
 </body>
 
