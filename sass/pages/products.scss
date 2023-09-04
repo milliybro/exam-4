@@ -53,6 +53,11 @@ main {
     position: absolute;
     top: 8px;
     right: 8px;
+    border-radius: 4px;
+    opacity: 0.5;
+    background: var(--grayscale-lightest, #f3f2f1);
+  }
+  svg {
   }
 
   .card-body {
@@ -136,8 +141,8 @@ main {
     cursor: pointer;
   }
 }
-.pagination{
-   justify-content: center;
+.pagination {
+  justify-content: center;
   display: flex;
   gap: 20px !important;
 }
@@ -155,18 +160,18 @@ main {
   }
 }
 .page-item {
-  .page-link{
-   color: var(--grayscale-hardest, #606060);
-  text-align: center;
+  .page-link {
+    color: var(--grayscale-hardest, #606060);
+    text-align: center;
 
-  /* Desc/Text/S */
-  font-family: Rubik;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%; /* 24px */
-  background-color: transparent;
-  border: none;
+    /* Desc/Text/S */
+    font-family: Rubik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    background-color: transparent;
+    border: none;
   }
 }
 .menu {

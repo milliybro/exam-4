@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Все продукты</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+   <link rel="stylesheet" href="css/products.min.css" />
+   <link rel="stylesheet" href="css/favorite.min.css">
+</head>
+
+<body>
+   <a id="backtop" href="#">
+      <img src="image/home/arr.svg" alt="arrow">
+   </a>
+   <div id="loader">
+      <div class="loader"></div>
+   </div>
+   <header>
+      <nav id="navbar">
+         <div class="container navbar__container">
+            <div class="navbar__logo">
+               <a href="index.html"><img class="logo__face" src="image/home/logo-face.png" alt="">
+                  <img class="logo__title" src="image/home/logo.png" alt=""></a>
+            </div>
+            <div class="navbar__catalog">
+               <button class="burger"><img src="image/home/menu.svg" alt=""></button>
+               <a class="navbar__link" href="category.html">Каталог</a>
+            </div>
+            <div class="navbar__input ">
+               <input class="search-input" type="text" placeholder="Найти товар">
+               <img src="image/home/lupa.png" alt="">
+            </div>
+            <div class="navbar__menu">
+               <div class="navbar__menu__heart">
+
+                  <a href="favorite.html">
+                     <img src="image/home/hearth.png" alt="">
+                     <h3>Избранное</h3>
+                     <span class="favorite-count  badge bg-primary"></span>
+                  </a>
+               </div>
+               <div class="navbar__menu__product">
+
+                  <a href="products.html">
+                     <img src="image/home/product.png" alt="fdbc">
+                     <h3>продукты</h3>
+                  </a>
+               </div>
+               <div class="navbar__menu__cart">
+                  <a href="cart.html">
+                     <img src="image/home/cart.png" alt="">
+                        <h3>Корзина<h3>
+                        <span class="cart-count badge bg-primary"></span>
+                  </a>
+               </div>
+            </div>
+            <div class="navbar__account">
+               <a href="">
+                  <img src="image/home/accaunt.png" alt="">
+                  <h2>Алексей</h2>
+                  <img class="nav__acc" src="image/home/arrow.png" alt="">
+               </a>
+            </div>
+         </div>
+         <ul class="container menu d-none"></ul>
+      </nav>
+   </header>
+
+   <main>
+      <section>
+         <div class="container">
+           <div class="row favotive-row"></div>
+         </div>
+       </section>
+   </main>
+
+   <footer id="footer">
+      <div class="container footer">
+         <img src="image/home/footer-logo.png" alt="">
+         <div class="footer__link">
+            <li><a href="about.html">О компании</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+            <li><a href="vacancy.html">Вакансии</a></li>
+            <li><a href="articles.html">Статьи</a></li>
+            <li><a href="#">Политика обработки персональных данных</a></li>
+         </div>
+         <div class="footer__social">
+            <img src="image/home/instagram.svg" alt="">
+            <img src="image/home/vkontakte.svg" alt="">
+            <img src="image/home/twitter.svg" alt="">
+            <img src="image/home/ok.svg" alt="">
+         </div>
+         <div class="footer__phone">
+            <img src="image/home/phone.svg" alt="">
+            <h3><a href="tel:+998904969007">+998 90 496 90 07</a></h3>
+         </div>
+      </div>
+      <div class="container dark__footer">
+         <h4>Дизайн</h4>
+         <img src="image/home/zasovskiy.svg" alt="">
+      </div>
+      <div class="container footer__link2">
+         <div class="footer__link2">
+            <li><a href="about.html">О компании</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+            <li><a href="vacancy.html">Вакансии</a></li>
+            <li><a href="articles.html">Статьи</a></li>
+            <li><a href="#">Политика обработки персональных данных</a></li>
+         </div>
+      </div>
+
+   </footer>
+   <footer id="footer__fixed">
+      <div class="container footer__fixed">
+         <div class="fixed__menu">
+            <a href="category.html"><img src="image/home/footer-mune].png" alt="">
+               <h6>Каталог</h6>
+            </a>
+         </div>
+         <div class="fixed__menu">
+            <a href="favorite.html"><img src="image/home/hearth.png" alt="">
+               <h6>Избранное</h6>
+            </a>
+         </div>
+         <div class="fixed__menu">
+            <a href="#"><img src="image/home/product.png" alt="">
+               <h6>Заказы</h6>
+            </a>
+         </div>
+         <div class="fixed__menu">
+            <a href="cart.html"><img src="image/home/cart.png" alt="">
+               <h6>Корзина</h6>
+            </a>
+         </div>
+         <div class="fixed__menu">
+            <img src="image/home/accaunt.png" alt="">
+         </div>
+      </div>
+   </footer>
+   <script src="js/tabs.js"></script>
+   <script src="js/main.js"></script>
+   <!-- <script src="js/show.js"></script>
+   <script src="js/pagination.js"></script> -->
+
+   <script src="js/categories-data.js"></script>
+
+   <script src="js/products-data.js"></script>
+   <script src="js/products.js"></script>
+   <script src="js/cart.js"></script>
+   <script src="js/favorite.js"></script>
+</body>
+
+</html>
