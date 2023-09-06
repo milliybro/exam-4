@@ -860,3 +860,8 @@ main {
 .d-none {
   display: none;
 }
+
+.input-group-text {
+  width: 50%;
+  margin-bottom: 20px;
+}

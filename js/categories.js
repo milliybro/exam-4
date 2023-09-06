@@ -1,35 +1,29 @@
 
-const categoryItem = document.querySelector(".category__item")
+let categoriesRow = document.querySelector(".category__item");
 
-function category(el){
-   const productCard = document.createElement("div")
-   productCard.classList.add("product__card")
-   const a = document.createElement("a")
-   a.href = ("../category.html")
-
-   const productImage= document.createElement("img")
-   productImage.src = el.image
-   productImage.alt = el.name
-   productImage.classList.add("product__image")
-
-   const productShadow = document.createElement("div")
-   productShadow.classList.add("product__shadow")
-
-   
-   const productName = document.createElement("p")
-   productName.textContent = el.name
-   productName.classList.add("product__name")
-   
-   productShadow.append(productName)
-   productCard.append(a)
-   a.append(productImage, productShadow)
-
-   return productCard
+function getCategoryCard({ name, image }) {
+  return `
+    <div class="">
+      <div class="card">
+        <img height="200" src=${image} class="object-fit-cover card-img-top" alt=${name} />
+        <div class="card-body">
+          <a href="../products.html" class="btn btn-primary" onclick="getCategore('${name}')">${name}</a>
+        </div>
+      </div>
+    </div>
+  `;
 }
 
-categories.map((el)=>{
-   categoryItem.append(category(el))
-})
+categories.forEach((el) => {
+  categoriesRow.innerHTML += getCategoryCard(el);
+});
+
+
+function getCategore(name) {
+  localStorage.setItem(CATEGORY, name);
+}
+
+//categoryMenu
 
 
 
@@ -57,3 +51,4 @@ categories.map((el, i) => {
   categorydown.append(newCategory);
 });
  
+

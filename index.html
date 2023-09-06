@@ -26,7 +26,7 @@
           </div>
           <div class="navbar__catalog">
              <button class="burger"><img src="image/home/menu.svg" alt=""></button>
-             <a class="navbar__link" href="category.html">Каталог</a>
+             <a class="navbar__link" href="categories.html">Каталог</a>
           </div>
           <div class="navbar__input ">
              <input class="search-input" type="text" placeholder="Найти товар">
@@ -57,14 +57,38 @@
              </div>
           </div>
           <div class="navbar__account">
-             <a href="">
-                <img src="image/home/accaunt.png" alt="">
-                <h2>Алексей</h2>
+             <button class="modal-open-btn">
+                <img class="milliy" src="image/home/milliy.jpg" alt="">
+                <h2>MilliyBro</h2>
                 <img class="nav__acc" src="image/home/arrow.png" alt="">
-             </a>
+             </button>
           </div>
        </div>
        <ul class="container menu d-none"></ul>
+       <div class="modal">
+        <div class="modal-body">
+          <form class="login-form" novalidate>
+            <div class="input-group">
+              <h2 class="form-title">Вход</h2>
+              <input required type="text" placeholder="username" />
+              <p class="valid-feedback">Thanks</p>
+              <p class="invalid-feedback">Please fill username</p>
+            </div>
+            <div class="input-group">
+              <input required type="password" placeholder="password" />
+              <p class="valid-feedback">Thanks</p>
+              <p class="invalid-feedback">Please fill password</p>
+            </div>
+            <button type="submit" class="modal-btn">Вход</button>
+          </form>
+        </div>
+        <button class="modal-close-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M18.3536 5.64645C18.5488 5.84171 18.5488 6.15829 18.3536 6.35355L6.35355 18.3536C6.15829 18.5488 5.84171 18.5488 5.64645 18.3536C5.45118 18.1583 5.45118 17.8417 5.64645 17.6464L17.6464 5.64645C17.8417 5.45118 18.1583 5.45118 18.3536 5.64645Z" fill="#414141"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.64645 5.64645C5.84171 5.45118 6.15829 5.45118 6.35355 5.64645L18.3536 17.6464C18.5488 17.8417 18.5488 18.1583 18.3536 18.3536C18.1583 18.5488 17.8417 18.5488 17.6464 18.3536L5.64645 6.35355C5.45118 6.15829 5.45118 5.84171 5.64645 5.64645Z" fill="#414141"/>
+          </svg>
+        </button>
+      </div>
     </nav>
  </header>
   <main>
@@ -253,26 +277,7 @@
       </div>
     </div>
   </footer>
-  <script src="js/tabs.js\
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  "></script>
+  <script src="js/tabs.js"></script>
   <script src="js/main.js"></script>
   <script src="js/products-data.js"></script>
   <script src="js/categories-data.js"></script>
